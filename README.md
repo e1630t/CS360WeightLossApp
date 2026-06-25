@@ -1,9 +1,20 @@
 # CS360WeightLossApp  
 SNHU Final CS360 Project Android App for Weight Tracking
 
-Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?
-What screens and features were necessary to support user needs and produce a user-centered UI for the app? How did your UI designs keep users in mind? Why were your designs successful?
-How did you approach the process of coding your app? What techniques or strategies did you use? How could those techniques or strategies be applied in the future?
-How did you test to ensure your code was functional? Why is this process important, and what did it reveal?
-Consider the full app design and development process from initial planning to finalization. Where did you have to innovate to overcome a challenge?
-In what specific component of your mobile app were you particularly successful in demonstrating your knowledge, skills, and experience?
+**Goals and User Needs**
+      The Weight Tracking App was designed to meet the user’s need for a simple, fast, and private way to log daily weight entries without the clutter or complexity found in many commercial fitness apps. The core requirements included a secure login system, persistent data storage, the ability to add, edit, and delete weight entries, with an optional SMS reminder to support consistency. These features were chosen to address users who want a lightweight, distraction free tool rather than a full fitness suite. By storing all data locally through SQLite and avoiding unnecessary permissions, the app ensures privacy and reliability while still giving users complete control over their progress. The goal was to create a personalized app that is fast, and easy to use where users can open, update, and close it in seconds.
+
+**Screens and Features**
+     To support these needs, the app required several screens and UI components. The login screen provides an entry point with username and password fields, enabling secure access to each user’s data. The main Weight History screen includes fields for adding new entries, a RecyclerView grid for displaying past entries, and buttons for editing or deleting individual records. Additional UI elements allow users to set a goal weight and manage SMS reminder permissions. Every design choice centered on minimizing typing, keeping navigation predictable, and presenting information in a clear layout. The UI succeeds because it avoids clutter, uses consistent spacing and labeling, and supports quick and simple interactions.
+     
+**Process and Techniques**
+      The coding process followed a modular strategy that made development more manageable and adaptable. I began by implementing the foundational login system before layering on more complex features like CRUD operations and runtime SMS permissions. Breaking the project into small, testable pieces allowed me to verify each component before moving on, reducing debugging time later. I also relied on reusable patterns such as separating UI logic from data logic, using adapters for list rendering, and encapsulating database operations in dedicated methods. These strategies will be valuable in future projects because they promote clean architecture which is easier for debugging.
+      
+**Ensuring Code Functionality**
+     Testing was the most important tool for ensuring the app functioned as intended. I tested each feature as I implemented it. I first verified database inserts and reads, then confirmed that editing and deleting entries updated both the UI and the underlying SQLite tables. I also tested SMS permission flows across different emulator versions to ensure consistent behavior. This process revealed issues such as mismatched XML IDs, adapter update problems, and permission handling cases issues. Identifying and resolving these issues early prevented larger failures later and reinforced the importance of continuous testing throughout development.
+
+**Challenges and Innovations**
+     A major challenge was implementing full CRUD functionality with a RecyclerView while keeping the UI responsive and intuitive. Another was managing Android’s strict SMS permission model, which required runtime checks, user prompts, and fallback behavior. I also had to redesign parts of the UI to ensure that editing entries worked smoothly, which involved creating a custom dialog layout and updating the adapter to support callbacks. These challenges pushed me to refine my understanding of Android architecture and to think critically about how different components interact.
+
+**Demonstration of Unique Capabilities**
+     The component that best demonstrates my skills and experience is the weight history CRUD system, which integrates SQLite storage, RecyclerView rendering, custom dialogs, and adapter driven event handling. This part of the app required a strong understanding of data flow, UI updates, and Android lifecycle behavior. Since I have take several classes that implement both CRUD logic and SQL this was a strong area for me to work in. Successfully implementing add, edit, and delete operations shows my ability to build functional, user centered features that work reliably across devices. 
