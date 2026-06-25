@@ -1,5 +1,5 @@
 # CS360WeightLossApp  
-SNHU Final CS360 Project Android App for Weight Tracking  \n
+SNHU Final CS360 Project Android App for Weight Tracking
 
 Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?
 What screens and features were necessary to support user needs and produce a user-centered UI for the app? How did your UI designs keep users in mind? Why were your designs successful?
